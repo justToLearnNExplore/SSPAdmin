@@ -1,0 +1,114 @@
+.add-game {
+    padding: 80px;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .addgame-itemfield {
+    margin-bottom: 15px;
+    gap: 10px;
+  }
+  
+  .addgame-itemfield p {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .addgame-itemfield input[type="text"],
+  .addgame-itemfield select {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .addgame-itemfield select {
+    height: 45px;
+  }
+  
+  .addgame-row {
+    display: flex;
+    gap: 50px;
+  }
+  
+  .addgame-row .addgame-itemfield {
+    flex: 1;
+  }
+  
+  .addgame-uploader {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .addgame-uploader:hover {
+    background-color: #f0f0f0;
+  }
+  
+  .image-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .preview-image-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .preview-image {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+  }
+  
+  .addgame-btn {
+    padding: 12px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #556B2F;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+  }
+  
+  .addgame-btn:hover {
+    background-color: #6B8E23;
+  }
+  
+  @media (max-width: 768px) {
+    .add-game {
+      padding: 15px;
+    }
+    
+    .addgame-itemfield input[type="text"],
+    .addgame-itemfield select {
+      font-size: 14px;
+    }
+    
+    .addgame-btn {
+      font-size: 14px;
+      padding: 10px;
+    }
+  
+    .addgame-row {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  

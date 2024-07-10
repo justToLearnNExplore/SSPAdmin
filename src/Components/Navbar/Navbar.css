@@ -1,0 +1,148 @@
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10%;
+  background-color: #FFF8E1;
+  color: #556B2F;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure it's above other content */
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.nav-logo {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo p {
+  font-size: 1.7rem;
+  font-weight: bold;
+  color: #8B4513;
+  margin: 0 0 0 10px;
+}
+
+.nav-logo img {
+  width: 55px;
+  height: 55px;
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.nav-admin {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #556B2F;
+}
+
+.nav-menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center; /* Align menu items vertically */
+}
+
+.nav-menu li {
+  margin-right: 20px;
+}
+
+.nav-menu li:last-child {
+  margin-right: 0;
+}
+
+.nav-menu li a {
+  font-size: 1.2rem;
+  text-decoration: none;
+  color: #556B2F; /* Dark Olive Green */
+  transition: color 0.3s ease;
+}
+
+.nav-menu li a:hover,
+.nav-menu li a.active {
+  color: #FF4500; /* Orange Red */
+}
+
+.login-button {
+  background-color: #556B2F; /* Dark Olive Green */
+  color: #ffffff; /* White */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout-button {
+  background-color: #b11f1f; /* Dark Olive Green */
+  color: #ffffff; /* White */
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:hover,
+.logout-button:hover {
+  background-color: #FF4500; /* Orange Red */
+}
+
+/* Enhancements for better responsiveness */
+@media (max-width: 768px) {
+  .nav-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+  }
+
+  .nav-logo {
+    flex-direction: row;
+  }
+
+  .nav-logo img {
+    margin-bottom: 10px;
+  }
+
+  .nav-logo p {
+    font-size: 1.2rem;
+    margin: 0;
+  }
+
+  .nav-menu {
+    flex-direction: column;
+  }
+
+  .nav-menu li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .login-button,
+  .logout-button {
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .nav-container {
+    padding: 5px 10px;
+  }
+
+  .nav-logo p {
+    font-size: 1.2rem;
+  }
+}

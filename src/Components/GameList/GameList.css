@@ -1,0 +1,77 @@
+.body {
+  margin-top: 80px; /* Space from navbar */
+  display: flex;
+  justify-content: center;
+  align-items: center; /* Center vertically */
+}
+
+ol {
+  counter-reset: game-counter; /* Initialize the counter */
+}
+
+.game-item::before {
+  counter-increment: game-counter; /* Increment the counter */
+  content: counter(game-counter) ". "; /* Display the counter value */
+  font-weight: bold;
+  margin-right: 10px; /* Space between the number and the content */
+  color: #c82333;
+}
+
+.game-list {
+  gap: 20px; /* Adjust the gap between game items */
+  width: 100%;
+  max-width: 1250px; /* Example maximum width */
+  padding: 20px; /* Padding around the game list */
+  box-sizing: border-box; /* Include padding in width calculation */
+  margin-top: 40px; /* Adjust margin from top */
+  margin-bottom: 40px; /* Adjust margin from bottom */
+  justify-items: center; /* Center items horizontally */
+}
+
+.game-item {
+  display: flex;
+  width: 100%; /* Each game item occupies full width */
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: justify; /* Center content vertically */
+}
+
+.game-item h3 {
+  margin-top: 0;
+}
+
+.game-item p {
+  margin: 5px 0; /* Adjust margin */
+}
+
+.game-item .images {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.game-item .game-image {
+  width: 100px; /* Adjust size of images */
+  height: 100px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.game-item .remove-btn {
+  align-self: flex-end; /* Align button to the bottom */
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.game-item .remove-btn:hover {
+  background-color: #c82333;
+}
